@@ -80,8 +80,7 @@ main {
 
 #search-bar > input {
   min-width: 350px;
-  max-width: 500px;
-  width: 60%;
+  width: 100%;
   height: 24px;
   border: none;
   outline: none;
@@ -165,6 +164,7 @@ footer > div {
 }
 
 /* Get the footer flexbox to work correctly */
+/* TODO: Still having issues with flexbox ordering. May need to change to CSS grid or something. */
 @media screen and (max-width: 800px) {
 
   footer {

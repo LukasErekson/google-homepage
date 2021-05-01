@@ -1,0 +1,188 @@
+body {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+  margin: 0px 10px 0px 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#nav-block-left {
+  /* No styles yet */
+}
+
+#nav-block-right {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+#account-photo {
+  border-radius: 20px;
+  border: 4px solid white;
+}
+#account-photo:hover {
+  border: 4px solid #EEE;
+}
+
+main {
+  text-align: center;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+#search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 400px;
+  max-width: 550px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #DDD;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#search-bar:hover {
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, .15);
+}
+
+#spyglass {
+  height: 20px;
+  width: 20px;
+  opacity: 35%;
+  padding: 2px;
+}
+
+#search-bar > input {
+  min-width: 350px;
+  max-width: 500px;
+  width: 60%;
+  height: 24px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+#button-space {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.search-button {
+  border: 0px;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #FAFAFA;
+  color:#444;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, .25);
+}
+
+.announcements {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.announcements > a{
+  color:blue;
+  margin: 0px;
+  padding: 0px;
+}
+
+.announcements > a:hover {
+  text-decoration: underline;
+}
+
+.announcements > a:visited {
+  color: purple;
+}
+
+footer { 
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-link {
+  color: #777;
+}
+
+#carbon-neutral {
+  height: 20px;
+  order: 1;
+}
+
+#footer-block-left {
+  order: 0;
+}
+
+#footer-block-right {
+  order: 2;
+}
+
+footer > div {
+  padding: 15px;
+}
+
+/* Get the footer flexbox to work correctly */
+@media screen and (max-width: 800px) {
+
+  footer {
+    flex-direction: column;
+  }
+
+  #carbon-neutral {
+    height: 20px;
+    order: 0;
+    flex-wrap: wrap;
+  }
+  
+  #footer-block-left {
+    order: 1;
+  }
+  
+  #footer-block-right {
+    order: 1;
+  }
+
+}

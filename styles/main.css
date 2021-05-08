@@ -33,6 +33,30 @@ nav {
   align-items: center;
 }
 
+#apps-shortcut {
+  /* background-color: grey; */
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border: 4px solid white;
+  margin-right: -5px;
+}
+
+#apps-shortcut:hover {
+  border: 4px solid #EEE;
+  background-color: #EEE;
+}
+
+#app-square {
+  display: block;
+  background-color: #777;
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+}
+
 #account-photo {
   border-radius: 20px;
   border: 4px solid white;
@@ -157,10 +181,12 @@ footer {
 
 #footer-block-right {
   order: 2;
+  min-width: 250px;
 }
 
 footer > div {
   padding: 15px;
+  min-width: 325px;
 }
 
 /* Get the footer flexbox to work correctly */

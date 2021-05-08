@@ -23,7 +23,7 @@
     <div id="nav-block-right">
       <a href="https://mail.google.com/">Gmail</a>
       <a href="https://images.google.com/">Images</a>
-      <a href="">Google Apps</a>
+      <a href="" id="apps-shortcut"><span id="app-square"></span></a>
       <a href=""><img id="account-photo" src="https://lh3.googleusercontent.com/ogw/ADGmqu8YaRWHvB6wUs5gX4m_3ATvEf7FwtNnT2HX3jVSrA=s32-c-mo" alt="Profile Picture" style="width:32px; height:32px;" /></a>
     </div>
   </nav>
@@ -55,12 +55,11 @@
   </main>
 
   <footer>
-    <!-- TODO: Add hyperlink references to anchor tags below -->
-    <!-- Google's footer is also split into two groups -->
+    <!-- Google's footer is also split into several groups -->
     <div id="footer-block-left">
-      <a class="footer-link" href="">Advertising</a>
-      <a class="footer-link" href="">Business</a>
-      <a class="footer-link" href="">How Search Works</a>
+      <a class="footer-link" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+      <a class="footer-link" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+      <a class="footer-link" href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a>
     </div>
 
     <div id="carbon-neutral">
@@ -71,8 +70,10 @@
     </div>
 
     <div id="footer-block-right">
-      <a class="footer-link" href="">Privacy</a>
-      <a class="footer-link" href="">Terms</a>
+      <a class="footer-link" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
+      <a class="footer-link" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
+      <!-- Brings up an actual settings menu in Google. Can probably be replicated
+      with JavaScript once I've leared more about that. -->
       <a class="footer-link" href="">Settings</a>
     </div>
   </footer>
